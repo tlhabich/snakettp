@@ -1,0 +1,9 @@
+%Initialize path
+base_path = fileparts(mfilename('fullpath'));
+addpath(...
+        genpath(fullfile(base_path, "kinematics")), ...
+        genpath(fullfile(base_path, "functions")) ...
+);
+
+     run('../set_based_task_priority_ik/init_path.m');
+     
