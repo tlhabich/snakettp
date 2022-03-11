@@ -1,9 +1,9 @@
 # Snake Telemanipulation using Task-Priority
-SnakeTTP is an algorithm for intuitive telemanipulation of hyper-redundant snake robots realizing follow-the-leader motion for endoscopic tasks. The new shape fitting method uses task-priority inverse kinematics and allows different position and orientation specifications for each link. This approach shows a fast convergence, which is essential for online path planning. The code is part of a conference paper submitted for publication at IROS 2022. You can find a detailed description of SnakeTTP in our paper.
+SnakeTTP is an algorithm for intuitive telemanipulation of hyper-redundant snake robots realizing follow-the-leader motion for endoscopic tasks. The new shape fitting method uses task-priority inverse kinematics and allows different position and orientation specifications for each link. This approach shows a fast convergence which is essential for online path planning. The code is part of a conference paper submitted for publication at IROS 2022. You can find a detailed description of SnakeTTP in our paper.
 <p align="center">
-</a>
-  <img src="img/snakettp.png" width="400"/>
-</a>
+  <a href="https://www.youtube.com/watch?v=dv4SBmW4p_4" />
+    <img src="img/snakettp_youtube.png" width="400"/>
+  </a>
 </p>
 
 ## Table of Contents
@@ -17,7 +17,7 @@ SnakeTTP is an algorithm for intuitive telemanipulation of hyper-redundant snake
 * [Contact](#contact)
 
 ## Getting Started
-The packages [set_based_task_priority-ik](https://github.com/tlhabich/set_based_task_priority_ik), [matlab_toolbox](https://github.com/SchapplM/matlab_toolbox), [robotics-dep-ext](https://github.com/SchapplM/robotics-dep-ext) and [robotics-toolbox](https://github.com/SchapplM/robotics-toolbox) are necessary. The path is initialized running
+The packages [set_based_task_priority_ik](https://github.com/tlhabich/set_based_task_priority_ik), [matlab_toolbox](https://github.com/SchapplM/matlab_toolbox), [robotics-dep-ext](https://github.com/SchapplM/robotics-dep-ext) and [robotics-toolbox](https://github.com/SchapplM/robotics-toolbox) are necessary. The path is initialized running
 ```
 $ init_path.m
 ```
@@ -26,7 +26,7 @@ $ init_path.m
 ### Snake Kinematics
 Matlab functions of forward kinematics and (geometric) Jacobians of all robot's links are required. In the kinematics folder you can find these functions for snake robots with alternating single-axis pitch and yaw joints. If needed, the DH parameters can be adjusted. The functions can be mex-compiled using Matlab:
 ```
-$ matlabfcn2mex('fkine_num')
+$ matlabfcn2mex({'fkine_num'})
 $ matlabfcn2mex({'jgeom_num'})
 ```  
 ### Shape Fitting
@@ -38,7 +38,12 @@ The proposed shape fitting approach can be found in *kinematics/shape_fitting.m*
 </p>
 
 ### Telemanipulation
-**TODO**
+**Will be added in the next days.**
+<p align="center">
+</a>
+  <img src="img/snakettp.png" width="400"/>
+</a>
+</p>
 
 ## Citation
 If you use this software for your research, please cite the following publication:
